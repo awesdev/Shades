@@ -1,0 +1,75 @@
+.storys
+    padding: 157px 0 131px 0
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__text
+        color: #258AFF
+        font-weight: 700
+        font-size: 15px
+        line-height: calc((18 / 15) * 100%)
+        letter-spacing: 2.8125px
+        text-transform: uppercase
+    &__title
+        margin-top: 50px
+        width: 350px
+        color: #1F1F1F
+    &__subtitle
+        margin-top: 15px
+        width: 315px
+        color: #666666
+    &__grid
+        display: grid
+        grid-template-columns: repeat(2, 350px)
+        gap: 30px
+        &-card
+            &:nth-of-type(4)
+                margin-top: -30px
+        &-content
+            padding: 30px 35px
+            background: #FFFFFF
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.036062)
+            border-radius: 5px
+            cursor: pointer
+            transition: box-shadow .3s ease
+            &:hover
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        &-text
+            color: #1F1F1F
+            font-family: 'Rubik', sans-serif
+            font-size: 18px
+            line-height: calc((32 / 18) * 100%)
+            letter-spacing: -0.1px
+        &-human
+            margin-top: 30px
+            display: flex
+        &-img
+            margin-right: 22px
+            width: 43px
+            height: 43px
+        &-name
+            color: #1F1F1F
+            font-weight: 700
+            font-size: 17px
+            line-height: calc((28 / 17) * 100%)
+            letter-spacing: -0.31875px
+        &-descr
+            color: #666666
+            font-size: 15px
+            line-height: calc((28 / 15) * 100%)
+            letter-spacing: -0.4px
+    &__clients
+        margin-top: 122px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-link
+            &:hover
+                .storys__clients-img
+                    mix-blend-mode: normal
+                    opacity: 1
+        &-img
+            mix-blend-mode: luminosity
+            opacity: 0.5
+            transition: opacity .3s ease

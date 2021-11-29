@@ -1,0 +1,133 @@
+.offer
+    padding: 137px 0 180px 0
+    background: url(../img/offer/bg.jpg) center center / cover no-repeat
+    &__container
+        text-align: center
+    &__text
+        color: #FFFFFF
+        font-weight: 700
+        font-size: 15px
+        line-height: calc((18 / 15) * 100%)
+        letter-spacing: 2.8125px
+        text-transform: uppercase
+    &__title
+        margin: 50px auto 0 auto
+        width: 600px
+        color: #FFFFFF
+    &__cards
+        margin-top: 90px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__card
+        width: 350px
+        padding: 30px 45px
+        text-align: left
+        border-radius: 6px
+        background: #FFFFFF
+        cursor: pointer
+        transition: transform .3s ease, box-shadow .3s ease
+        &:hover
+            transform: scale(1.05)
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, .5)
+        &-dark
+            margin-right: 30px
+            background: #2B405A
+        &-white
+            position: relative
+            &::before
+                position: absolute
+                top: 32px
+                right: 32px
+                content: 'Popular'
+                padding: 5px 14px
+                background: #4EAB08
+                border-radius: 13px
+                color: #FFFFFF
+                font-weight: 700
+                font-size: 12px
+                line-height: calc((15 / 12) * 100%)
+                letter-spacing: -0.514286px
+                text-transform: uppercase
+        &-text
+            color: #E5E5E5
+            font-weight: 700
+            font-size: 13px
+            line-height: calc((32 / 13) * 100%)
+            letter-spacing: 0.433333px
+            text-transform: uppercase
+            &--gray
+                color: #666666
+        &-price
+            color: #FFFFFF
+            margin-top: 18px
+            font-weight: 700
+            font-size: 50px
+            line-height: calc((60 / 50) * 100%)
+            &--black
+                color: #1F1F1F
+            span
+                &:nth-child(1)
+                    position: relative
+                    top: -11px
+                    display: inline-block
+                    font-size: 30px
+                    line-height: calc((35 / 30) * 100%)
+                    margin-right: 2px
+                &:nth-child(2)
+                    font-size: 20px
+                    line-height: calc((20 / 17) * 100%)
+                    margin: 0 5px
+                &:nth-child(3)
+                    font-size: 17px
+                    line-height: calc((20 / 17) * 100%)
+        &-descr
+            margin-top: 4px
+            width: 230px
+            color: #E5E5E5
+            font-size: 14px
+            line-height: calc((23 / 14) * 100%)
+            letter-spacing: -0.4px
+            &--gray
+                color: #666666
+        &-list
+            margin-top: 26px
+        &-item
+            margin-top: 7px
+            padding-left: 24px
+            color: #FFFFFF
+            font-size: 17px
+            line-height: calc((32 / 17) * 100%)
+            letter-spacing: -0.425px
+            background: url(../icons/offer/check-white.svg) left center / cover no-repeat
+            background-size: 12px
+            &--cross
+                color: #878B90
+                background: url(../icons/offer/check-gray.svg) left center / cover no-repeat
+                background-size: 12px
+                span
+                    position: relative
+                    &::before
+                        position: absolute
+                        content: ''
+                        height: 1px
+                        width: 100%
+                        background: #878B90
+                        top: 50%
+                        transform: translate(0, -50%)
+            &--black
+                color: #1F1F1F
+                background: url(../icons/offer/check-black.svg) left center / cover no-repeat
+                background-size: 12px
+            &:first-child
+                margin-top: 0
+        &-btn
+            margin-top: 40px
+        &-info
+            margin-top: 5px
+            color: #878B90
+            font-size: 14px
+            line-height: calc((28 / 14) * 100%)
+            letter-spacing: -0.4px
+            &--gray
+                color: #666666

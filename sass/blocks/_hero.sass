@@ -1,0 +1,72 @@
+.hero
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    &__container
+        text-align: center
+    &__text
+        color: #666666
+        font-weight: 700
+        font-size: 15px
+        line-height: calc((18 / 15) * 100%)
+        letter-spacing: 2.8125px
+        text-transform: uppercase
+    &__title
+        width: 600px
+        color: #1F1F1F
+        margin: 27px auto 0 auto
+        font-size: 70px
+        line-height: 100%
+        letter-spacing: -4px
+    &__subtitle
+        width: 525px
+        margin: 19px auto 0 auto
+        color: #666666
+        font-size: 21px
+        line-height: calc((36 / 21) * 100%)
+        letter-spacing: -0.4px
+    &__form
+        margin-top: 31px
+        &-input
+            margin-right: 9px
+            padding: 20px 55px 20px 24px
+            border: none
+            outline: none
+            color: #878B90
+            font-size: 18px
+            line-height: calc((21 / 18) * 100%)
+            border-radius: 3px
+            &::placeholder
+                color: #878B90
+                font-size: 18px
+                line-height: calc((21 / 18) * 100%)
+    &__info
+        color: #878B90
+        margin-top: 24px
+        font-size: 17px
+        line-height: calc((20 / 17) * 100%)
+    &__features
+        margin-top: 157px
+        display: flex
+        justify-content: space-between
+        text-align: left
+        &-column
+            padding-left: 60px
+            &:nth-of-type(1)
+                background: url(../icons/features/1.png) left top no-repeat
+            &:nth-of-type(2)
+                background: url(../icons/features/2.png) left top no-repeat
+            &:nth-of-type(3)
+                background: url(../icons/features/3.png) left top no-repeat
+        &-header
+            color: #000000
+            font-weight: 700
+            font-size: 21px
+            line-height: calc((32 / 21) * 100%)
+        &-descr
+            margin-top: 7px
+            width: 270px
+            color: #666666
+            font-size: 17px
+            line-height: calc((28 / 17) * 100%)
